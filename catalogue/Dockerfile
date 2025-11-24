@@ -15,7 +15,7 @@ USER roboshop
 COPY --from=build /opt/server /opt/server
 ENV MONGO="true" \
     MONGO_URL="mongodb://mongodb:27017/catalogue"
-RUN chown -R roboshop:roboshop /op/server
+RUN chown -R roboshop:roboshop /opt/server
 USER roboshop
 CMD ["node", "server.js"]
 
