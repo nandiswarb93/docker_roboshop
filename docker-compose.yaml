@@ -25,7 +25,7 @@ services:
     volumes:
     - mysql:/var/lib/mysql
   rabbitmq:
-    image: nandiswarb93/rabbitmq:3
+    image: rabbitmq:3
     container_name: rabbitmq
     volumes: # -v rabbitmq:/var/lib/rabbitmq
     - rabbitmq:/var/lib/rabbitmq
