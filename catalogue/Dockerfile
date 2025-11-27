@@ -11,7 +11,7 @@ FROM node:20.19.5-alpine3.22
 #create a group and user
 
 RUN addgroup -S roboshop && adduser -S roboshop -G roboshop && \
-    RUN chown -R roboshop:roboshop /opt/server
+    chown -R roboshop:roboshop /opt/server
 WORKDIR /opt/server
 EXPOSE 8080
 LABEL com.project="roboshop" \ 
